@@ -1,0 +1,45 @@
+<div class="container_user">
+    <br><br>
+    <mat-card class="order_class">
+      <mat-card-header>
+        <mat-toolbar class="toolbar">
+            Order Listing
+        </mat-toolbar>
+        
+      </mat-card-header>
+      <br>
+      <mat-card-content>
+        <div class="container">
+          <table datatable class="row-border hover">
+            <thead>
+              <tr>
+                <th>Sr No.</th>
+                <th>Customer Name</th>
+                <th>Order No.</th>
+                <th>No. of Items</th>
+                <th>Total Amount of Order</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let order of orderList;let i = index;">
+                <td>{{i+1}}</td>
+                <td  (click)="viewDetails(content,order.id)">{{order.customerName}}</td>
+                <td  (click)="viewDetails(content,order.id)">{{order.orderNumber}}</td>
+                <td  (click)="viewDetails(content,order.id)">{{order.itemCount}}</td>
+                <td (click)="viewDetails(content,order.id)">{{order.itemCount*order.price}}</td>
+                <td (click)="viewDetails(content,order.id)" [ngSwitch]="order.status">
+                  <span *ngSwitchCase="1">Order Received</span>
+                  <span *ngSwitchCase="2"> Prepared </span>
+                  <span *ngSwitchCase="3">Ready To serve</span>
+                </td>
+                <td> <button mat-raised-button color="primary" (click)="changeStatus(order.id,order.status)">Change Status</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

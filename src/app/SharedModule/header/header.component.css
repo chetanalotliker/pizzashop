@@ -1,0 +1,20 @@
+.header{
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #3f51b5;
+  padding: 3px 15px;
+  color:white;
+}
+@media only screen and (max-width: 600px) {
+  .header{
+    margin-bottom: 0px;;
+  }
+}
+.linkcolor
+{
+  color:white;
+}
+.homeclass{
+  margin-left: 1184px;
+  float: right;
+}

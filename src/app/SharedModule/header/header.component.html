@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+     <button mat-icon-button>
+          <mat-icon>menu</mat-icon>
+      </button>
+  </div>
+
+  <div>
+    <img src="/assets/data/mainimg.ico" height="30">&nbsp;&nbsp;&nbsp;&nbsp;Pizza Shop
+  </div>
+  <div>
+    <mat-icon class="homeclass" (click)="gotoHome()">home</mat-icon>
+  </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+          
+      </ul>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,54 @@
+.full-width-table {
+    width: 100%;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+  .mat-icon {
+    font-weight: bold !important;
+    padding-left: 76%;
+  }
+  .toolbar
+  {
+    background-color: #3f51b5;
+    color: white;
+  
+  }
+  td {
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word;
+    white-space: pre-wrap; 
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap; 
+  
+  }
+  .order_class
+  {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-top: -1%;
+  }
+
+  .modal-content {
+    width: 135% !important;
+    margin-left: -19% ;
+    margin-top: 25%;
+}
